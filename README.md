@@ -19,11 +19,11 @@
 ### The Value of Operational Certainty in Astronomy
 
 Through an operational state reconciliation architecture, AstroGit-OS:
-* **Governs Infrastructure Evolution:**  
+* **Governs Infrastructure Evolution**  
 Tracks state changes across instrumentation subsystems.
-* **Detects Configuration Drift:**  
+* **Detects Configuration Drift**  
 Identifies deviations between observed state (*As-Is*) and desired configuration (*To-Be*).
-* **Establishes Traceability:**  
+* **Establishes Traceability**  
 Links observation blocks to versioned operational states via passive telemetry and non-intrusive extraction agents.
 
 ---
@@ -95,5 +95,5 @@ lineage:
 
 
 ---
-*Content & Architecture under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).*
-**2026 Cuxhaven Labs.
+Content & Architecture under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).
+**2026 Cuxhaven Labs.**
