@@ -10,7 +10,7 @@
 
 ---
 
-AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories. Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
+**AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.** Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
 
 ![AstroGit-OS](/images/diagrams/diagram-3.png)
 
@@ -49,6 +49,7 @@ Translates infrastructure maintenance into an auditable workflow through Pull Re
 
 ### Declarative State Example (`instrumentation.yaml`)
 
+```yaml
 version: "v0.2"
 timestamp: "2026-09-10T13:38:00Z"
 
@@ -90,6 +91,7 @@ subsystems:
 # Metadata de Linaje Criptográfico (State Hash)
 lineage:
   state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+```
 
 
 ---
