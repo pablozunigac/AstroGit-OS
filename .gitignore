@@ -74,4 +74,4 @@ _site/
 /.quarto/
 atelier/
 images/favicon
-images/manifesto-images
+images/manifesto-images.venv/
