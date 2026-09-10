@@ -89,11 +89,10 @@ subsystems:
       cryo_temperature: "STABLE"
       detector: "IDLE"
 
-# Criptographic Lineage Metadata (State Hash)
+# Cryptographic Lineage Metadata (State Hash)
 lineage:
   state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 ```
-
 
 ---
 Content & Architecture under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).  
