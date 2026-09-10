@@ -95,5 +95,5 @@ lineage:
 
 
 ---
-Content & Architecture under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).
+Content & Architecture under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).  
 **2026 Cuxhaven Labs.**
