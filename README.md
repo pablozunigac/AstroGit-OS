@@ -12,7 +12,7 @@
 
 AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories. Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
 
-![AstroGit-OS](/images/diagrams/diagram-4.png)
+![AstroGit-OS](/images/diagrams/diagram-3.png)
 
 ---
 
@@ -44,6 +44,53 @@ Supports operational continuity and the recovery of versioned configurations at 
 
 * **Non-Intrusive Declarative Governance**  
 Translates infrastructure maintenance into an auditable workflow through Pull Requests and human approval, operating strictly asynchronously without interfering with real-time telescope operations.
+
+---
+
+### Declarative State Example (`instrumentation.yaml`)
+
+version: "v0.2"
+timestamp: "2026-09-10T13:38:00Z"
+
+# Entity Root: Evaluado mediante la regla de composición UML (Region Master)
+site:
+  id: "ESO-PARANAL-UT1"
+  canonical_state: "WORKING"
+
+# Orthogonal / Concurrent Regions (UML Concurrent State Diagram)
+subsystems:
+  region_dome:
+    entity: "Dome"
+    active_state: "OPEN"
+    substates:
+      shutter: "FULL_OPEN"
+      azimuth_lock: "ENGAGED"
+
+  region_mount:
+    entity: "Mount"
+    active_state: "TRACKING"
+    substates:
+      axis_ra: "ENCODER_LOCKED"
+      axis_dec: "ENCODER_LOCKED"
+
+  region_optics:
+    entity: "Optics"
+    active_state: "WAITING"
+    substates:
+      m1_actuators: "PARKED"
+      adaptive_loop: "OPEN"
+
+  region_instruments:
+    entity: "Instrumentation"
+    active_state: "WAITING"
+    substates:
+      cryo_temperature: "STABLE"
+      detector: "IDLE"
+
+# Metadata de Linaje Criptográfico (State Hash)
+lineage:
+  state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
 
 ---
 *Content & Architecture under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).*
