@@ -11,8 +11,8 @@
 
 # Pages / Numbers / Keynote
 *.pages
-*.numbers
 *.key
+*.numbers
 *.merged-assets
 
 # ==========================================
