@@ -1,6 +1,6 @@
-## AstroGit-OS (v0.2)
+## AstroGit-OS --- GitOps Architecture for State Governance and Operational Lineage of Astronomical Instrumentation
 
-| Metric / Metadata | Value |
+| Metric | Value |
 | :--- | :--- |
 | **Author** | [Pablo Zúñiga](https://pablozunigac.github.io) |
 | **Status** | `Phase 0 / Draft` |
