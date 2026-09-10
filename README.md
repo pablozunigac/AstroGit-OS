@@ -6,7 +6,7 @@
 | **Status** | `Phase 0 / Draft` |
 | **Stable Release** | Early Q4 2026 |
 | **Next Milestone** | Read-only demonstrator against operational subsystem |
-| **License** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) (Specs) / [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
+| **License** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) (Architecture & Specs) / [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
 
 ---
 
@@ -53,12 +53,13 @@ Translates infrastructure maintenance into an auditable workflow through Pull Re
 version: "v0.2"
 timestamp: "2026-09-10T13:38:00Z"
 
-# Entity Root: Evaluado mediante la regla de composición UML (Region Master)
+# Master Region (Site) Compound Operational State
 site:
   id: "ESO-PARANAL-UT1"
   canonical_state: "WORKING"
 
-# Orthogonal / Concurrent Regions (UML Concurrent State Diagram)
+# Orthogonal / Concurrent Regions (via UML Concurrent State Diagram)
+# Subsystems: {Dome, Mount, Optics, Instrumentation}
 subsystems:
   region_dome:
     entity: "Dome"
@@ -88,7 +89,7 @@ subsystems:
       cryo_temperature: "STABLE"
       detector: "IDLE"
 
-# Metadata de Linaje Criptográfico (State Hash)
+# Criptographic Lineage Metadata (State Hash)
 lineage:
   state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 ```
