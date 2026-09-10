@@ -10,4 +10,4 @@ AstroGit-OS is a reference declarative architecture for the configuration, maint
 **Last Update Status:** Phase 0 / Draft  
 **Stable Release Date:** Early Q4 2026  
 **Next Milestone:** Read-only demonstrator against a representative operational subsystem  
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) (Content & Architecture Spec)
+**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) (Content & Architecture Specs)
