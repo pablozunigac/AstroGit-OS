@@ -1,0 +1,77 @@
+# ==========================================
+# macOS & Apple System / Apps
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Pages / Numbers / Keynote
+*.pages
+*.numbers
+*.key
+*.merged-assets
+
+# ==========================================
+# VS Code & Editors
+# ==========================================
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ==========================================
+# R Language
+# ==========================================
+.Rhistory
+.RData
+.RDataTmp
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# ==========================================
+# Shell / Bash
+# ==========================================
+*.log
+*.tmp
+*.bak
+.bash_history
+.zsh_history
+
+# ==========================================
+# Markdown / Previews / Exports
+# ==========================================
+*.tmp.md
+.obsidian/
+*.pdf.bak
+
+# ==========================================
+# Folders /  / Exportaciones
+# ==========================================
+**/*.quarto_ipynb
+_legacy/
+_site/
+.quarto/
+/.quarto/
+atelier/
+images/favicon
+images/manifesto-images
