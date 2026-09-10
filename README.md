@@ -18,12 +18,13 @@ AstroGit-OS is a reference declarative architecture for the configuration, maint
 
 ### The Value of Operational Certainty in Astronomy
 
-Through an operational state reconciliation architecture, AstroGit-OS governs the evolution of infrastructure and instrumentation, detects deviations between observed state and desired configuration, and establishes a verifiable link between observation blocks and the versioned operational state through passive telemetry and non-intrusive state extraction agents. In doing so, it aims to reduce operational uncertainty, minimize downtime, and facilitate the reproduction of technical conditions underlying the scientific use of astronomical instrumentation.
-
 Through an operational state reconciliation architecture, AstroGit-OS:
-* **Governs Infrastructure Evolution:** Tracks state changes across instrumentation subsystems.
-* **Detects Configuration Drift:** Identifies deviations between observed state (*As-Is*) and desired configuration (*To-Be*).
-* **Establishes Traceability:** Links observation blocks to versioned operational states via passive telemetry and non-intrusive extraction agents.
+* **Governs Infrastructure Evolution:**  
+Tracks state changes across instrumentation subsystems.
+* **Detects Configuration Drift:**  
+Identifies deviations between observed state (*As-Is*) and desired configuration (*To-Be*).
+* **Establishes Traceability:**  
+Links observation blocks to versioned operational states via passive telemetry and non-intrusive extraction agents.
 
 ---
 
@@ -35,13 +36,13 @@ AstroGit-OS does not capture, store, process, simulate, or transmit astronomical
 
 ### AstroGit-OS Differentiating Principles
 
-* **Scientific Lineage Without Massive Data**
+* **Scientific Lineage Without Massive Data**  
 Associates each astronomical observation block with a SHA-256 identifier of the hardware operational state, enabling verifiable scientific traceability without burdening the repository with massive datasets.
 
-* **Distributed Operational Resilience**
+* **Distributed Operational Resilience**  
 Supports operational continuity and the recovery of versioned configurations at remote high-altitude observatories through decentralized and synchronized Git topologies.
 
-* **Non-Intrusive Declarative Governance**
+* **Non-Intrusive Declarative Governance**  
 Translates infrastructure maintenance into an auditable workflow through Pull Requests and human approval, operating strictly asynchronously without interfering with real-time telescope operations.
 
 ---
