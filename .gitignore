@@ -67,11 +67,4 @@ env/
 # ==========================================
 # Folders /  / Exportaciones
 # ==========================================
-**/*.quarto_ipynb
-_legacy/
-_site/
-.quarto/
-/.quarto/
-atelier/
-images/favicon
-images/manifesto-images.venv/
+docs/astrogit-os.pdf
