@@ -41,7 +41,6 @@ class OperationalStateDeclaration(BaseModel):
     """
 
     model_config = ConfigDict(frozen=True, extra="ignore")
-
     version: str
     site: SiteState
     subsystems: dict[str, SubsystemState]
@@ -50,15 +49,13 @@ class OperationalStateDeclaration(BaseModel):
 def compute_canonical_sha256(state_declaration: OperationalStateDeclaration) -> str:
     """
     Computes a deterministic SHA-256 fingerprint of the operational state.
-    Uses JSON canonicalization (sorted keys, no whitespace) to ensure immutability
-    across different YAML parsers or key orders.
+    Uses JSON canonicalization (sorted keys, no whitespace) to ensure immutability across different YAML parsers or key orders.
     """
     raw_dict = state_declaration.model_dump()
 
     canonical_json = json.dumps(
         raw_dict, sort_keys=True, separators=(",", ":"), ensure_ascii=True
     )
-
     return hashlib.sha256(canonical_json.encode("utf-8")).hexdigest()
 
 
@@ -79,7 +76,6 @@ if __name__ == "__main__":
     manifest_file = (
         Path(__file__).resolve().parent.parent / "manifests" / "instrumentation.yaml"
     )
-
     try:
         calculated_hash = process_manifest(manifest_file)
         print("=" * 60)

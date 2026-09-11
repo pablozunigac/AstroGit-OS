@@ -1,4 +1,4 @@
-## AstroGit-OS --- GitOps Architecture for State Governance and Operational Lineage of Astronomical Instrumentation
+## AstroGit-OS - GitOps Architecture for State Governance and Operational Lineage of Astronomical Instrumentation
 
 | Metric | Value |
 | :--- | :--- |
