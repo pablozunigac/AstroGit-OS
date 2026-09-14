@@ -3,10 +3,10 @@
 | Metric | Value |
 | :--- | :--- |
 | **Author** | [Pablo Zúñiga](https://pablozunigac.github.io) |
-| **Status** | `Phase 0 / Draft` |
-| **Stable Release** | Early Q4 2026 |
-| **Next Milestone** | Read-only demonstrator against operational subsystem |
-| **License** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) (Architecture & Specs) / [MIT](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
+| **Status** | As-Is vs. To-Be Reconciliation [**Discussion**](https://github.com/pablozunigac/AstroGit-OS/issues/3) |
+| **Stable Release Date** | Early Q4 2026 |
+| **Next Milestone** | [**Milestone 1**](https://github.com/pablozunigac/AstroGit-OS/milestone/1) -- Read-only demonstrator against a representative operational |
+| **License** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en) (Architecture & Specs) / [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
 
 ---
 
