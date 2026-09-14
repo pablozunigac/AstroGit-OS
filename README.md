@@ -1,4 +1,4 @@
-## AstroGit-OS - GitOps Architecture for State Governance and Operational Lineage of Astronomical Instrumentation
+## AstroGit-OS: GitOps Architecture for State Governance and Operational Lineage of Astronomical Instrumentation
 
 | Metric | Value |
 | :--- | :--- |
@@ -38,6 +38,7 @@ AstroGit-OS does not capture, store, process, simulate, or transmit astronomical
 
 * **Scientific Lineage Without Massive Data**  
 Associates each astronomical observation block with a SHA-256 identifier of the hardware operational state, enabling verifiable scientific traceability without burdening the repository with massive datasets.
+
 
 * **Distributed Operational Resilience**  
 Supports operational continuity and the recovery of versioned configurations at remote high-altitude observatories through decentralized and synchronized Git topologies.
@@ -93,6 +94,19 @@ subsystems:
 lineage:
   state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 ```
+
+---
+
+## AstroGit-OS [Roadmap](https://github.com/users/pablozunigac/projects/2)
+
+AstroGit-OS roadmap is building using native GitHub features: issues, milestones, and projects.
+
+* **Phase 0:** Modeling & Inventory
+* **Phase 1:** Read-Only Integration & Baseline Ingestion
+* **Phase 2:** Telemetry Integration & State Ingestion
+* **Phase 3:** Drift Detection Engine
+* **Phase 4:** Declarative Orchestration & Change Control
+* **Phase 5:** Cryptographic Proof & Lineage
 
 ---
 Content & Architecture under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).  
