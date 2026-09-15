@@ -8,12 +8,14 @@
 .Spotlight-V100
 .Trashes
 .fseventsd
-
-# Pages / Numbers / Keynote
 *.pages
 *.key
+*.keynote
 *.numbers
 *.merged-assets
+*.csv
+*.xls
+*.xlsx
 
 # ==========================================
 # VS Code & Editors
@@ -70,4 +72,4 @@ env/
 docs/annexes
 docs/ESO-docs
 docs/ESO-astrogit-os-FULL.pdf
-docs/ESO-astrogit-os-LITE.pdf
+docs/astrogit-os-whitepaper.pdf
