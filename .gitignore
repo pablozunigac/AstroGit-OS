@@ -67,10 +67,15 @@ env/
 *.pdf.bak
 
 # ==========================================
-# Folders /  / Exportaciones
+# Folders
 # ==========================================
 docs/annexes
 docs/ESO-docs
 docs/sponsorship
-docs/ESO-astrogit-os-FULL.pdf
+
+# ==========================================
+# Files
+# ==========================================
 docs/astrogit-os-whitepaper.pdf
+docs/ESO-astrogit-os-FULL.pdf
+
