@@ -101,12 +101,19 @@ lineage:
 
 AstroGit-OS roadmap is building using native GitHub features: issues, milestones, and projects.
 
-* **Phase 0:** Modeling & Inventory
-* **Phase 1:** Read-Only Integration & Baseline Ingestion
-* **Phase 2:** Telemetry Integration & State Ingestion
-* **Phase 3:** Drift Detection Engine
-* **Phase 4:** Declarative Orchestration & Change Control
-* **Phase 5:** Cryptographic Proof & Lineage
+* **[Milestone 1](https://github.com/pablozunigac/AstroGit-OS/milestone/1): Declarative Modeling and Reader Demonstrator (_In Progress_)**
+  Formalization of the optomechanical system hierarchy and development of the functional prototype for asynchronous metadata ingestion.
+
+* **Milestone 2: Reconciliation Engine and Drift Detection (_Q1 2027_)**
+  Implementation of passive telemetry agents and drift detection algorithms between the desired configuration and the observed state.
+
+* **Milestone 3: Pull-Request Governance and SHA-256 Scientific Lineage (_Q2 2027_)**
+  Integration of CI/CD pipelines for change validation via Pull Requests and generation of cryptographic hashes for scientific traceability.
+
+* **Milestone 4: Consolidation and Continuity of AstroGit-OS (_Q4 2027_)**
+  Upon project completion, code, documentation, and open artifacts (MIT, CC BY 4.0) will be consolidated projecting subsequent adoption without committing additional funding.
+
+
 
 ---
 Content & Architecture under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).  
