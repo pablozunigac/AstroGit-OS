@@ -97,7 +97,7 @@ lineage:
 
 ---
 
-## AstroGit-OS [Roadmap](https://github.com/users/pablozunigac/projects/2)
+## [AstroGit-OS Roadmap](https://github.com/users/pablozunigac/projects/2)
 
 AstroGit-OS roadmap is building using native GitHub features: issues, milestones, and projects.
 
