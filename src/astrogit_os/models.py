@@ -1,8 +1,8 @@
 """Data models for validating declarative state manifests."""
 
-from typing import Any, Dict, Optional
+from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class SubstateSpec(BaseModel):
@@ -16,7 +16,7 @@ class SubsystemSpec(BaseModel):
 
     entity: str
     active_state: str
-    substates: Dict[str, Any]
+    substates: dict[str, Any]
 
 
 class SiteSpec(BaseModel):
@@ -32,4 +32,4 @@ class InstrumentationSpec(BaseModel):
     version: str
     timestamp: str
     site: SiteSpec
-    subsystems: Dict[str, SubsystemSpec]
+    subsystems: dict[str, SubsystemSpec]

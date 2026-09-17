@@ -7,7 +7,7 @@ License: MIT
 
 import hashlib
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
         print(" AstroGit-OS --- Lineage SHA-256 State Verification")
         print("=" * 60)
         print(f" Target File  : {manifest_file.name}")
-        print(f" Timestamp    : {datetime.now(timezone.utc).isoformat()}")
+        print(f" Timestamp    : {datetime.now(UTC).isoformat()}")
         print(f" State SHA-256: {calculated_hash}")
         print("=" * 60)
     except Exception as err:

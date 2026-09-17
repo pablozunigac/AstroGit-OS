@@ -2,10 +2,11 @@
 
 import sys
 from pathlib import Path
+
 import yaml
 
-from astrogit_os.models import InstrumentationSpec
 from astrogit_os.hashing import generate_state_hash
+from astrogit_os.models import InstrumentationSpec
 
 
 def main() -> None:
@@ -19,10 +20,10 @@ def main() -> None:
 
     # Validate model
     spec = InstrumentationSpec(**raw_data)
-    
+
     # Generate SHA-256 state hash
     state_hash = generate_state_hash(raw_data)
-    
+
     print(f"Site Loaded: {spec.site.id} [{spec.site.canonical_state}]")
     print(f"State Lineage Hash (SHA-256): {state_hash}")
 

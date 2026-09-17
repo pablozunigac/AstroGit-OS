@@ -3,7 +3,7 @@
 import hashlib
 import json
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 from pydantic import BaseModel, ConfigDict
 from ruamel.yaml import YAML
@@ -46,7 +46,7 @@ def compute_canonical_sha256(
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
 
-def process_manifest(file_path: Path) -> Optional[str]:
+def process_manifest(file_path: Path) -> str | None:
     if not file_path.is_file():
         raise FileNotFoundError(f"Manifest not found: {file_path}")
 

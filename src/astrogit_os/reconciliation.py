@@ -1,9 +1,9 @@
 """Engine for comparing observed state against desired state baseline."""
 
-from typing import Dict, Any, Tuple
+from typing import Any
 
 
-def reconcile_states(observed: Dict[str, Any], desired: Dict[str, Any]) -> Tuple[bool, Dict[str, Any]]:
+def reconcile_states(observed: dict[str, Any], desired: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
     """Compares observed vs desired state. Returns (is_synced, diff)."""
     diff = {}
     is_synced = True
