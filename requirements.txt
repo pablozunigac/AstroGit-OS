@@ -1,0 +1,18 @@
+# ====================================================================
+# AstroGit-OS Deterministic Environment Dependencies (Mac M1 ARM64)
+# ====================================================================
+
+pydantic==2.13.5
+pydantic_core==2.46.5
+astropy==8.0.1
+astropy-iers-data==0.2026.9.14.0.56.43
+pyerfa==2.0.1.5
+polars==1.44.2
+polars-runtime-32==1.44.2
+pyarrow==25.0.1
+numpy==2.5.3
+PyYAML==6.0.3
+GitPython==3.1.62
+gitdb==4.0.12
+smmap==5.0.3
+packaging==26.3
