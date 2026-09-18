@@ -17,8 +17,8 @@
     {
       "name": "main",
       "commit": {
-        "sha": "fff28af765d3cb6a96eef5fd39124ffec148443f",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/fff28af765d3cb6a96eef5fd39124ffec148443f"
+        "sha": "1a4710cf60463cb38d4d4608e9a956362044bf54",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/1a4710cf60463cb38d4d4608e9a956362044bf54"
       },
       "protected": false,
       "protection": {
@@ -39,6 +39,17 @@
       "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/architecture",
       "name": "architecture",
       "color": "f33d1b",
+      "default": false,
+      "description": "",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 12244935481,
+      "node_id": "LA_kwDOUUVgcM8AAAAC2drjOQ",
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/code",
+      "name": "code",
+      "color": "1c3b32",
       "default": false,
       "description": "",
       "archived_at": null,
@@ -158,11 +169,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 0,
+      "open_issues": 1,
       "closed_issues": 0,
       "state": "open",
       "created_at": "2026-09-10T07:58:11Z",
-      "updated_at": "2026-09-13T22:50:50Z",
+      "updated_at": "2026-09-18T02:09:40Z",
       "due_on": "2027-03-31T00:00:00Z",
       "closed_at": null
     },
@@ -244,6 +255,8 @@
     }
   ],
   "file_tree": [
+    ".github/scripts/astrogit_os_metadata.json",
+    ".github/scripts/export_repo_metadata.sh",
     ".github/workflows/test.yml",
     ".gitignore",
     "LICENSE",
@@ -268,6 +281,11 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
+    "1a4710c chore: update diagrams",
+    "a2d95d0 chore: update gitignore and purge temporary build artifacts",
+    "49de600 chore: update gitignore",
+    "4c30135 add: new repo metadata scripts",
+    "7bf559d edit: minor changes into public documentation",
     "fff28af edit: new git workflows architecture",
     "1991d3c edit: new git workflows architecture",
     "fe22909 edit: new git workflows architecture",
@@ -318,6 +336,44 @@
     "63a4dce add: all-new AstroGit-OS repository"
   ],
   "issues": [
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "### Repo Tree: Future Folders & Files\n\n#### Internal subsistems hierarchy\n\n- [ ] mkdir -p src/astrogit_os/cli\n- [ ] mkdir -p src/astrogit_os/core\n- [ ] mkdir -p src/astrogit_os/lineage\n- [ ] mkdir -p src/astrogit_os/reconciliation\n- [ ] mkdir -p src/astrogit_os/schemas\n\n---\n\n#### Python files\n\n- [ ] touch src/astrogit_os/cli/__init__.py\n- [ ] touch src/astrogit_os/core/__init__.py\n- [ ] touch src/astrogit_os/lineage/__init__.py\n- [ ] touch src/astrogit_os/reconciliation/__init__.py\n- [ ] touch src/astrogit_os/schemas/__init__.py\n- [ ] touch src/astrogit_os/py.typed",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-18T02:09:39Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC2drjOQ",
+          "name": "code",
+          "description": "",
+          "color": "1c3b32"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "Milestone #2 — Automated drift detection & state reconciliation engine",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Planned\n**Due Date:** Q1 2027\n\n---\n\n### Scope & Deliverables\n\n- Ingest real-time telemetry from passive edge agents to continuously evaluate the physical state (*As-Is*).\n- Implement the core reconciliation engine comparing live operational telemetry against declarative state configurations (*To-Be* in YAML/JSON schemas).\n- Develop automated drift detection alerting mechanisms for out-of-tolerance hardware/subsystem configurations (e.g., optomechanical alignment deviations, filter assembly parameters).\n- Provide a CLI and API reporting interface for system drift visualization.",
+        "dueOn": "2027-03-31T00:00:00Z"
+      },
+      "number": 12,
+      "state": "OPEN",
+      "title": "Next AstroGit Repo Tree",
+      "updatedAt": "2026-09-18T02:09:39Z"
+    },
     {
       "assignees": [
         {
