@@ -101,7 +101,7 @@ lineage:
 
 AstroGit-OS roadmap is building using native GitHub features: issues, milestones, and projects.
 
-* **[Milestone 1](https://github.com/pablozunigac/AstroGit-OS/milestone/1): Declarative Modeling and Reader Demonstrator (_In Progress_)**  
+* **Milestone 1: Declarative Modeling and Reader Demonstrator (_In Progress_)**  
   Formalization of the optomechanical system hierarchy and development of the functional prototype for asynchronous metadata ingestion.
 
 * **Milestone 2: Reconciliation Engine and Drift Detection (_Q1 2027_)**  
