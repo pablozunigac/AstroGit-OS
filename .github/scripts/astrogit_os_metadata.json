@@ -1,0 +1,609 @@
+{
+  "repository": {
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.",
+    "forkCount": 0,
+    "isPrivate": false,
+    "name": "AstroGit-OS",
+    "owner": {
+      "id": "MDQ6VXNlcjk0NDg2NTA=",
+      "login": "pablozunigac"
+    },
+    "stargazerCount": 0
+  },
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "fff28af765d3cb6a96eef5fd39124ffec148443f",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/fff28af765d3cb6a96eef5fd39124ffec148443f"
+      },
+      "protected": false,
+      "protection": {
+        "enabled": false,
+        "required_status_checks": {
+          "enforcement_level": "off",
+          "contexts": [],
+          "checks": []
+        }
+      },
+      "protection_url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/branches/main/protection"
+    }
+  ],
+  "labels": [
+    {
+      "id": 12128349024,
+      "node_id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/architecture",
+      "name": "architecture",
+      "color": "f33d1b",
+      "default": false,
+      "description": "",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 12127282813,
+      "node_id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/documentation",
+      "name": "documentation",
+      "color": "0075ca",
+      "default": true,
+      "description": "Improvements or additions to documentation",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 12128351729,
+      "node_id": "LA_kwDOUUVgcM8AAAAC0uf18Q",
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/formal-specs",
+      "name": "formal-specs",
+      "color": "f82be3",
+      "default": false,
+      "description": "",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 12128343519,
+      "node_id": "LA_kwDOUUVgcM8AAAAC0ufV3w",
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/GitOps",
+      "name": "GitOps",
+      "color": "ecb522",
+      "default": false,
+      "description": "",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 12128341362,
+      "node_id": "LA_kwDOUUVgcM8AAAAC0ufNcg",
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/labels/telemetry",
+      "name": "telemetry",
+      "color": "4cfc34",
+      "default": false,
+      "description": "",
+      "archived_at": null,
+      "archived_by": null
+    }
+  ],
+  "milestones": [
+    {
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/1",
+      "html_url": "https://github.com/pablozunigac/AstroGit-OS/milestone/1",
+      "labels_url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/1/labels",
+      "id": 17770583,
+      "node_id": "MI_kwDOUUVgcM4BDyhX",
+      "number": 1,
+      "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+      "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+      "creator": {
+        "login": "pablozunigac",
+        "id": 9448650,
+        "node_id": "MDQ6VXNlcjk0NDg2NTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9448650?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pablozunigac",
+        "html_url": "https://github.com/pablozunigac",
+        "followers_url": "https://api.github.com/users/pablozunigac/followers",
+        "following_url": "https://api.github.com/users/pablozunigac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pablozunigac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pablozunigac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pablozunigac/subscriptions",
+        "organizations_url": "https://api.github.com/users/pablozunigac/orgs",
+        "repos_url": "https://api.github.com/users/pablozunigac/repos",
+        "events_url": "https://api.github.com/users/pablozunigac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pablozunigac/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 6,
+      "closed_issues": 1,
+      "state": "open",
+      "created_at": "2026-09-10T06:25:34Z",
+      "updated_at": "2026-09-17T16:45:16Z",
+      "due_on": "2026-10-31T00:00:00Z",
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/2",
+      "html_url": "https://github.com/pablozunigac/AstroGit-OS/milestone/2",
+      "labels_url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/2/labels",
+      "id": 17771867,
+      "node_id": "MI_kwDOUUVgcM4BDy1b",
+      "number": 2,
+      "title": "Milestone #2 — Automated drift detection & state reconciliation engine",
+      "description": "### Project Status & Roadmap\n\n**Current Status:** Planned\n**Due Date:** Q1 2027\n\n---\n\n### Scope & Deliverables\n\n- Ingest real-time telemetry from passive edge agents to continuously evaluate the physical state (*As-Is*).\n- Implement the core reconciliation engine comparing live operational telemetry against declarative state configurations (*To-Be* in YAML/JSON schemas).\n- Develop automated drift detection alerting mechanisms for out-of-tolerance hardware/subsystem configurations (e.g., optomechanical alignment deviations, filter assembly parameters).\n- Provide a CLI and API reporting interface for system drift visualization.",
+      "creator": {
+        "login": "pablozunigac",
+        "id": 9448650,
+        "node_id": "MDQ6VXNlcjk0NDg2NTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9448650?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pablozunigac",
+        "html_url": "https://github.com/pablozunigac",
+        "followers_url": "https://api.github.com/users/pablozunigac/followers",
+        "following_url": "https://api.github.com/users/pablozunigac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pablozunigac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pablozunigac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pablozunigac/subscriptions",
+        "organizations_url": "https://api.github.com/users/pablozunigac/orgs",
+        "repos_url": "https://api.github.com/users/pablozunigac/repos",
+        "events_url": "https://api.github.com/users/pablozunigac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pablozunigac/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-09-10T07:58:11Z",
+      "updated_at": "2026-09-13T22:50:50Z",
+      "due_on": "2027-03-31T00:00:00Z",
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/3",
+      "html_url": "https://github.com/pablozunigac/AstroGit-OS/milestone/3",
+      "labels_url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/3/labels",
+      "id": 17771956,
+      "node_id": "MI_kwDOUUVgcM4BDy20",
+      "number": 3,
+      "title": "Milestone #3 — Pull-Request changes governance & SHA-256 scientific traceability",
+      "description": "### Project Status & Roadmap\n\n**Current Status:** Planned\n**Due Date:** Late Q2 2027\n\n---\n\n### Scope & Deliverables\n\n- Implement CI/CD pipelines to validate, test, and approve engineering state changes via Pull Requests (GitOps workflow).\n- Integrate automated pre-deployment schema validation for hardware/instrument reconfigurations.\n- Implement the SHA-256 cryptographic binding engine to link scientific Observation Blocks (OBs) with immutable operational hardware state fingerprints.\n- Expose cryptographic proof verification tools for open science metadata reproducibility.",
+      "creator": {
+        "login": "pablozunigac",
+        "id": 9448650,
+        "node_id": "MDQ6VXNlcjk0NDg2NTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9448650?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pablozunigac",
+        "html_url": "https://github.com/pablozunigac",
+        "followers_url": "https://api.github.com/users/pablozunigac/followers",
+        "following_url": "https://api.github.com/users/pablozunigac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pablozunigac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pablozunigac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pablozunigac/subscriptions",
+        "organizations_url": "https://api.github.com/users/pablozunigac/orgs",
+        "repos_url": "https://api.github.com/users/pablozunigac/repos",
+        "events_url": "https://api.github.com/users/pablozunigac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pablozunigac/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-09-10T08:02:55Z",
+      "updated_at": "2026-09-13T22:51:06Z",
+      "due_on": "2027-06-30T00:00:00Z",
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/4",
+      "html_url": "https://github.com/pablozunigac/AstroGit-OS/milestone/4",
+      "labels_url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/milestones/4/labels",
+      "id": 17825950,
+      "node_id": "MI_kwDOUUVgcM4BEACe",
+      "number": 4,
+      "title": "Milestone #4 — Consolidation and Continuity of AstroGit-OS",
+      "description": "### Project Status & Roadmap\n\n**Current Status:** Planned\n**Due Date:** Early Q4 2027\n\n---\n\n### Deliverables & Continuity\n\nUpon completion of the 9-month execution period, the project will deliver a functional technology demonstrator, full source code, technical documentation, operational models, and traceability artifacts under open licenses (MIT and CC BY 4.0)—providing a reusable and extensible asset for the community.\n\nFuture adoption, institutional scaling, and industrial technology transfer remain prospective next steps based on demonstration results, requiring no additional scope or funding under the current project.",
+      "creator": {
+        "login": "pablozunigac",
+        "id": 9448650,
+        "node_id": "MDQ6VXNlcjk0NDg2NTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9448650?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pablozunigac",
+        "html_url": "https://github.com/pablozunigac",
+        "followers_url": "https://api.github.com/users/pablozunigac/followers",
+        "following_url": "https://api.github.com/users/pablozunigac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pablozunigac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pablozunigac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pablozunigac/subscriptions",
+        "organizations_url": "https://api.github.com/users/pablozunigac/orgs",
+        "repos_url": "https://api.github.com/users/pablozunigac/repos",
+        "events_url": "https://api.github.com/users/pablozunigac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pablozunigac/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-09-13T05:02:21Z",
+      "updated_at": "2026-09-13T22:51:32Z",
+      "due_on": "2027-10-31T00:00:00Z",
+      "closed_at": null
+    }
+  ],
+  "file_tree": [
+    ".github/workflows/test.yml",
+    ".gitignore",
+    "LICENSE",
+    "LICENSE-CC-BY-4.0",
+    "README.md",
+    "docs/ESO-astrogit-os-LITE.pdf",
+    "docs/astrogit-os-overview.pdf",
+    "docs/diagrams/astrogit-os-diagram-1.png",
+    "docs/diagrams/astrogit-os-diagram-2.png",
+    "docs/diagrams/astrogit-os-diagram-3.png",
+    "docs/diagrams/astrogit-os-diagram-4.png",
+    "manifests/instrumentation.yaml",
+    "poc/poc001_sha256_generator.py",
+    "poc/poc002_sha256_generator.py",
+    "pyproject.toml",
+    "requirements.txt",
+    "src/astrogit_os/__init__.py",
+    "src/astrogit_os/cli.py",
+    "src/astrogit_os/hashing.py",
+    "src/astrogit_os/models.py",
+    "src/astrogit_os/reconciliation.py",
+    "tests/test_smoke.py"
+  ],
+  "recent_commits": [
+    "fff28af edit: new git workflows architecture",
+    "1991d3c edit: new git workflows architecture",
+    "fe22909 edit: new git workflows architecture",
+    "69a2514 Update README.md",
+    "358225d Add MIT License file",
+    "1acc62c Create LICENSE-CC-BY-4.0",
+    "a7b1db6 Rename LICENSE to LICENSE-MIT",
+    "8661541 add: MIT LICENSE",
+    "012f487 edit: minor changes in AstroGit-OS documentation",
+    "d9029db edit: minor changes in AstroGit-OS documentation",
+    "59dac6c fix: new repo source for diagrams",
+    "3ae3991 fix: new repo source for diagrams",
+    "d88123e fix: minor syntax changes",
+    "0c38113 style: resolve all ruff linter warnings",
+    "f7e4f9b chore: re-index codebase with clean git cache",
+    "01c5357 chore: all-new AstroGit-OS repo dependencies",
+    "a24a37d add: AstroGit-OS Python requirements setup",
+    "fec9563 add: milestones roadmap structure",
+    "ebec25f add: milestones roadmap structure",
+    "6f2f9b6 add: milestones roadmap structure",
+    "e3649d4 update: new sponsorship docs",
+    "c02497f update: new sponsorship docs",
+    "94fdcb8 update: uploading PDF AstroGit-OS ESO grant docs",
+    "1e08131 update: new README title",
+    "f04b708 update: new metrics in README",
+    "ac2b9ac update: new metrics in README",
+    "d495e0b delete: deleting from remote repo .gitignore dependencies",
+    "d5498ac update: new .gitignore repository dependencies",
+    "ff2a94a update: new README details & new overview (v0.2)",
+    "4b85ba9 update: new SHA-256 generators",
+    "7a123bc update: new .gitignore exclusions",
+    "6cb14d5 update: new architecture supporting Python coding",
+    "d3f43ed edit: minor README changes",
+    "26bc6ef refactor: new internal tree order",
+    "3306e7c update: new repo architecture & content",
+    "4f0a3a5 update: new repo architecture & content",
+    "d5df042 update: new repo architecture & content",
+    "9be8526 update: new repo architecture & content",
+    "6301945 update: new repo architecture & content",
+    "5e7245a update: new repo architecture & content",
+    "7ec4e5e update: new repo architecture & content",
+    "91e9956 update: new repo architecture & content",
+    "f490020 update: new repo architecture & content",
+    "669100d fix: README.md image",
+    "25adcf0 fix: minor corrections in README.md copy",
+    "d4ed5e6 add: new high-res images collection",
+    "0b442f3 fix: updating README footer",
+    "63a4dce add: all-new AstroGit-OS repository"
+  ],
+  "issues": [
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "- Git DIFF is now out of Git workflows diagrams\n- AstroGit needs CREATE a DAG for Git commands: diff, branch, log, status, tag, and show\n\n---\n\n<img width=\"3840\" height=\"3490\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/34225792-d70c-4f3b-83fb-018cdf10acc4\" />\n\n<img width=\"773\" height=\"410\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/e3c429c5-3b98-4ecc-b8de-17bd81d4a409\" />",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-17T16:45:16Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
+          "name": "architecture",
+          "description": "",
+          "color": "f33d1b"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0uf18Q",
+          "name": "formal-specs",
+          "description": "",
+          "color": "f82be3"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 11,
+      "state": "OPEN",
+      "title": "AstroGit-OS needs a Git DAG for observational Git commands",
+      "updatedAt": "2026-09-17T19:36:34Z"
+    },
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "### Site Resolution Modeling\n\n**Inside vs outside of AstroGit Modeling? Why?**\n \n- Optics: M1, M2, ...\n- Adaptative Optics\n- Telemtry\n- Electromechanical subsystems\n\n---\n\n### Relations between Its Componente\n\n- Optics vs. Instruments: One-way o Round-Trip relation?",
+      "closedAt": null,
+      "comments": [
+        {
+          "id": "IC_kwDOUUVgcM8AAAABVNyYRQ",
+          "author": {
+            "login": "pablozunigac"
+          },
+          "authorAssociation": "OWNER",
+          "body": "### Subsystems Modeling\n\n<img width=\"1419\" height=\"545\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/cbc74d38-727e-446e-8eb9-0b06c90adce9\" />\n\n---\n\n> [!CAUTION]\n> **Draft Proposal — Pending Technical Review**\n> This breakdown — in scope, depth, and structural detail — serves as a draft baseline. It requires technical validation and is open for review and feedback from the team.\n\n---\n\n#### Dome\n- **Structure & Motion:** Arch/Shutter Doors, Azimuth Drive System, Wind Screens / Baffles, Vent Louvers.\n- **Thermal & Environment:** Building Air Conditioning / Slit Chilling, Air Circulation Flaps, Dome Thermal Mass Management.\n- **Service & Safety:** Crane & Hoist Infrastructure, Mirror Handling & Coating Access Platforms, Enclosure Safety Interlock System (SIS).\n\n---\n\n#### Mount\n- **Kinematics & Drives:** Altitude/Pitch Drives, Azimuth/Yaw Drives, Cable Wraps & Drag Chains.\n- **Hydrostatic & Bearing System:** Hydrostatic Bearing System (HBS) / Oil Pad Lines, Structural Thermal/Strain Sensing.\n- **Rotator / Adaptor Assemblies:** Nasmyth / Cassegrain / Prime Focus Rotators, Cable Rotators.\n- **Mount Auxiliary & Safety:** Mount Locking Pins / Stow Brakes, Seismic Restraint Systems, Emergency Stop Grid.\n\n---\n\n#### Optics\n- **Primary Mirror Assembly (M1):** Mirror Cell, Active Optics Support (Pneumatic/Axial/Lateral Actuators), M1 Thermal Control, Segment Edge Sensors & Positioning Actuators (si es segmentado).\n- **Secondary Mirror Assembly (M2):** M2 Cell, M2 Hexapod (5/6 DOF Positioner), M2 Adaptive/Active Surface Unit.\n- **Tertiary & Auxiliary Optics (M3, M4, M5...):** M3 Deployable/Tower Mechanism, M4/M5 AO Tip-Tilt / Flat Units, Stray Light Baffles & Covers, Mirror Dust Covers.\n- **Calibration & LGS Launch (OPT-CAL):** Laser Guide Star Launch Telescopes (LGLT), Telescope Calibration Units (Flat-field / Arc lamps).\n\n---\n\n####Instruments\n- **Focal Plane & Beam Distribution:** Field Pick-off / Dichroic Beamsplitters, Atmospheric Dispersion Corrector (ADC), Calibration & Guiding Unit (CGU / Technical WFS).\n- **Adaptive Optics Modules (AO):** Natural/Laser Wavefront Sensors (WFS), Deformable Mirrors (DM), Real-Time Controller Hardware Interface.\n- **Cryo-Vacuum & Environment:** Cryostat Pressure Vessel, Vacuum Pumping System, Cryo-coolers (Pulse Tube / Gifford-McMahon), Thermal Stabilization Controllers.\n- **Detector & Optomechanics Systems:** Science Detector Arrays (CCD / CMOS / IR FPA), Detector Readout Electronics (DRE), Filter Wheels, Dispersive Optics (Gratings/Prisms), Shutter Mechanisms.\n\n",
+          "createdAt": "2026-09-17T17:39:17Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/pablozunigac/AstroGit-OS/issues/6#issuecomment-5718710341",
+          "viewerDidAuthor": true
+        }
+      ],
+      "createdAt": "2026-09-10T15:33:20Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
+          "name": "architecture",
+          "description": "",
+          "color": "f33d1b"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 6,
+      "state": "OPEN",
+      "title": "Site Resolution Modeling & Relations between Its Componente",
+      "updatedAt": "2026-09-17T17:39:17Z"
+    },
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "### Non-Intrusive Declarative Gobernante\nTranslates infrastructure maintenance into an auditable workflow through Pull Requests and human approval, operating strictly asynchronously without interfering with real-time telescope operations.",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-10T06:14:54Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufNcg",
+          "name": "telemetry",
+          "description": "",
+          "color": "4cfc34"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 5,
+      "state": "OPEN",
+      "title": "Operational Reading & Passive Telemetry Stream",
+      "updatedAt": "2026-09-16T18:44:03Z"
+    },
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "### Modeling the use of SHA-256 hashes for astronomical operational states metadata\n\nAssociates each astronomical observation block with a SHA-256 identifier of the hardware operational state, enabling verifiable scientific traceability without burdening the repository with massive datasets.",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-10T06:10:38Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
+          "name": "architecture",
+          "description": "",
+          "color": "f33d1b"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0uf18Q",
+          "name": "formal-specs",
+          "description": "",
+          "color": "f82be3"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 4,
+      "state": "OPEN",
+      "title": "SHA-256: Scientific Lineage Without Massive Data",
+      "updatedAt": "2026-09-16T18:44:07Z"
+    },
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "Definition for To-Be -> Drift -> As-Is states reconciliation.",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-10T05:19:45Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
+          "name": "architecture",
+          "description": "",
+          "color": "f33d1b"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0uf18Q",
+          "name": "formal-specs",
+          "description": "",
+          "color": "f82be3"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 3,
+      "state": "OPEN",
+      "title": "As-Is vs. To-Be: Reconciliation of Operational Statements",
+      "updatedAt": "2026-09-17T05:20:10Z"
+    },
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "1- Canonical Operational States\n2- Subsystems Operational States\n3- Operational States Compound",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-10T05:13:58Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0uf18Q",
+          "name": "formal-specs",
+          "description": "",
+          "color": "f82be3"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 2,
+      "state": "OPEN",
+      "title": "UML State Machine Diagram Modeling",
+      "updatedAt": "2026-09-17T00:16:29Z"
+    },
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "### Git Commands Friction Points\n\n- [x] Pull vs (Fetch + Merge)\n- [x] Git reset vs Git revert\n- [x] Others audit/admin/management Git commands: branch, log, status, tag, show \n\n---\n\n### Git Commands Workflow\n\n```mermaid\ngraph TD;\n    A[Remote Repository] -->|git fetch| B[Local Repository];\n    B -->|git merge| C[Working Directory];",
+      "closedAt": "2026-09-17T15:38:01Z",
+      "comments": [
+        {
+          "id": "IC_kwDOUUVgcM8AAAABVMQdXA",
+          "author": {
+            "login": "pablozunigac"
+          },
+          "authorAssociation": "OWNER",
+          "body": "SOLVED: \n\n- git DIFF was eliminated from images collection\n- git DIFF is now in Git DAG diagram with: git branch/log/status/tag/show\n\n<img width=\"3840\" height=\"3490\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/25adee4c-721f-4ed7-a951-98cee330bd55\" />",
+          "createdAt": "2026-09-17T15:38:01Z",
+          "includesCreatedEdit": true,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/pablozunigac/AstroGit-OS/issues/1#issuecomment-5717106012",
+          "viewerDidAuthor": true
+        }
+      ],
+      "createdAt": "2026-09-10T05:07:26Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufV3w",
+          "name": "GitOps",
+          "description": "",
+          "color": "ecb522"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 1,
+      "state": "CLOSED",
+      "title": "Git Design: Metadata Workflows and Friction between Git Commands",
+      "updatedAt": "2026-09-17T16:23:53Z"
+    }
+  ],
+  "pull_requests": []
+}
