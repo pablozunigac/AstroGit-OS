@@ -1,9 +1,12 @@
-version: "v0.2"
-timestamp: "2026-09-10T13:38:00Z"
+apiVersion: "astrogit.os/v1alpha1"
+kind: "OperationalBaseline"
+metadata:
+  version: "v0.2"
+  timestamp: "2026-09-10T13:38:00Z"
+  site_id: "ESO-PARANAL-UT1"
 
 site:
-  id: "ESO-PARANAL-UT1"
-  canonical_state: "WORKING"
+  canonical_state: "OBSERVATION"
 
 subsystems:
   region_dome:
@@ -19,17 +22,22 @@ subsystems:
     substates:
       axis_ra: "ENCODER_LOCKED"
       axis_dec: "ENCODER_LOCKED"
+      max_tracking_error_arcsec: 0.05
 
   region_optics:
     entity: "Optics"
-    active_state: "WAITING"
+    active_state: "READY"
     substates:
       m1_actuators: "PARKED"
       adaptive_loop: "OPEN"
 
   region_instruments:
     entity: "Instrumentation"
-    active_state: "WAITING"
+    active_state: "READY"
     substates:
-      cryo_temperature: "STABLE"
+      cryo_temperature_k: 77.3
       detector: "IDLE"
+
+lineage:
+  state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      

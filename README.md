@@ -4,8 +4,8 @@
 | :--- | :--- |
 | **Author** | [**Pablo Zúñiga**](https://pablozunigac.github.io) |
 | **Development Progress** | [**AstroGit-OS Roadmap**](https://github.com/users/pablozunigac/projects/2/views/1) |
-| **Stable Release Date** | Early Q4 2026 |
 | **Next Milestone** | [**Milestone 1**](https://github.com/pablozunigac/AstroGit-OS/milestone/1): Read-only demonstrator against a representative operational |
+| **Stable Release Date** | Early Q4 2026 |
 | **License** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en) (Architecture & Specs) / [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
 
 ---
@@ -51,16 +51,20 @@ Translates infrastructure maintenance into an auditable workflow through Pull Re
 ### Declarative State Example (`instrumentation.yaml`)
 
 ```yaml
-version: "v0.2"
-timestamp: "2026-09-10T13:38:00Z"
+# YAML METADATA
+apiVersion: "astrogit.os/v1alpha1"
+kind: "OperationalBaseline"
+metadata:
+  version: "v0.2"
+  timestamp: "2023-12-20T13:38:00Z"
+  site_id: "ESO-PARANAL-UT1"
 
-# Master Region (Site) Compound Operational State
+# CANONICAL SITE STATE
 site:
-  id: "ESO-PARANAL-UT1"
-  canonical_state: "WORKING"
+  canonical_state: "OBSERVATION"
 
-# Orthogonal / Concurrent Regions (via UML Concurrent State Diagram)
-# Subsystems: {Dome, Mount, Optics, Instrumentation}
+# ORTHOGONAL / CONCURRENT STATES (via UML Concurrent State Diagram)
+# SUBSYSTEMS: {DOME, MOUNT, OPTICS, INSTRUMENTATION}
 subsystems:
   region_dome:
     entity: "Dome"
@@ -75,22 +79,23 @@ subsystems:
     substates:
       axis_ra: "ENCODER_LOCKED"
       axis_dec: "ENCODER_LOCKED"
+      max_tracking_error_arcsec: 0.05
 
   region_optics:
     entity: "Optics"
-    active_state: "WAITING"
+    active_state: "READY"
     substates:
       m1_actuators: "PARKED"
       adaptive_loop: "OPEN"
 
   region_instruments:
     entity: "Instrumentation"
-    active_state: "WAITING"
+    active_state: "READY"
     substates:
-      cryo_temperature: "STABLE"
+      cryo_temperature_k: 77.3
       detector: "IDLE"
 
-# Cryptographic Lineage Metadata (State Hash)
+# STATE HASH: CRYPTOGRAPHIC LINEAGE METADATA
 lineage:
   state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 ```
@@ -115,4 +120,4 @@ AstroGit-OS roadmap is building using native GitHub features: issues, milestones
 
 ---
 Content & Architecture under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en). Code under [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide).  
-**2026 Cuxhaven Labs.**
+**© 2026 Cuxhaven Labs.**
