@@ -1,0 +1,120 @@
+@startuml "Telescope_Subsystems_State_Machine"
+skinparam monochrome true
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+title 3.7 Composición del Estado Operational (Macro-Estados de Subsistemas)
+
+[*] --> En_Reposo : Apagado General
+
+state "En Energía / Operativo" as OPERATIVO {
+
+    ' ==========================================
+    ' REGIÓN 1: DOMO
+    ' ==========================================
+    [*] --> Domo_Cerrado
+    state "Domo: Cerrado" as Domo_Cerrado
+    state "Domo: Abriendo" as Domo_Abriendo
+    state "Domo: Abierto" as Domo_Abierto
+    state "Domo: Cerrando" as Domo_Cerrando_Proc
+    state "Domo: En Espera" as Domo_Espera
+    state "Domo: En Mantenimiento" as Domo_Mantenimiento
+    state "Domo: En Falla" as Domo_Falla
+
+    Domo_Cerrado --> Domo_Abriendo : Abrir Domo
+    Domo_Abriendo --> Domo_Abierto : Apertura Exitosa
+    Domo_Abierto --> Domo_Cerrando_Proc : Cerrar Domo
+    Domo_Cerrando_Proc --> Domo_Cerrado : Cierre Exitoso
+    
+    Domo_Abierto --> Domo_Espera : Pausar
+    Domo_Espera --> Domo_Abierto : Reanudar
+    Domo_Cerrado --> Domo_Mantenimiento : Bloqueo Ingeniería
+    Domo_Mantenimiento --> Domo_Cerrado : Fin Mantenimiento
+    
+    Domo_Abriendo --> Domo_Falla : [Falla Mecánica]
+    Domo_Cerrando_Proc --> Domo_Falla : [Falla Mecánica]
+    Domo_Abierto --> Domo_Falla : [Falla Interlocking]
+
+    --
+    ' ==========================================
+    ' REGIÓN 2: MONTURA
+    ' ==========================================
+    [*] --> Montura_Espera
+    state "Montura: En Espera" as Montura_Espera
+    state "Montura: Desplazándose" as Montura_Slewing
+    state "Montura: En Seguimiento" as Montura_Tracking
+    state "Montura: En Calibración" as Montura_Calibracion
+    state "Montura: En Mantenimiento" as Montura_Mantenimiento
+    state "Montura: En Falla" as Montura_Falla
+
+    Montura_Espera --> Montura_Slewing : Apuntar (Slew)
+    Montura_Slewing --> Montura_Tracking : Adquisición de Blanco
+    Montura_Tracking --> Montura_Espera : Fin de Bloque / Target
+    Montura_Slewing --> Montura_Espera : Abortar Target
+    
+    Montura_Espera --> Montura_Calibracion : Iniciar Calibración
+    Montura_Calibracion --> Montura_Espera : Fin Calibración
+    Montura_Espera --> Montura_Mantenimiento : Modo Ingeniería
+    Montura_Mantenimiento --> Montura_Espera : Fin Mantenimiento
+    
+    Montura_Slewing --> Montura_Falla : [Límite de Eje]
+    Montura_Tracking --> Montura_Falla : [Pérdida de Guía]
+
+    --
+    ' ==========================================
+    ' REGIÓN 3: ÓPTICA
+    ' ==========================================
+    [*] --> Optica_Espera
+    state "Óptica: En Espera" as Optica_Espera
+    state "Óptica: Alineando" as Optica_Alineando
+    state "Óptica: Alineada" as Optica_Alineada
+    state "Óptica: En Calibración" as Optica_Calibracion
+    state "Óptica: Degradada" as Optica_Degradada
+    state "Óptica: En Mantenimiento" as Optica_Mantenimiento
+    state "Óptica: En Falla" as Optica_Falla
+
+    Optica_Espera --> Optica_Alineando : Iniciar Óptica Activa
+    Optica_Alineando --> Optica_Alineada : Ajuste OK
+    Optica_Alineada --> Optica_Espera : Desactivar Lazo
+    
+    Optica_Espera --> Optica_Calibracion : Iniciar Mapeo
+    Optica_Calibracion --> Optica_Espera : Fin Mapeo
+    Optica_Alineada --> Optica_Degradada : [Falla Parcial]
+    Optica_Degradada --> Optica_Alineando : Re-alinear
+    
+    Optica_Espera --> Optica_Mantenimiento : Intervención Espejos
+    Optica_Mantenimiento --> Optica_Espera : Fin Mantenimiento
+    
+    Optica_Alineando --> Optica_Falla : [Falla Presión]
+
+    --
+    ' ==========================================
+    ' REGIÓN 4: INSTRUMENTACIÓN
+    ' ==========================================
+    [*] --> Inst_Espera
+    state "Instrumento: En Espera" as Inst_Espera
+    state "Instrumento: Operativa" as Inst_Operativa
+    state "Instrumento: En Calibración" as Inst_Calibracion
+    state "Instrumento: Degradada" as Inst_Degradada
+    state "Instrumento: En Mantenimiento" as Inst_Mantenimiento
+    state "Instrumento: En Falla" as Inst_Falla
+
+    Inst_Espera --> Inst_Operativa : Exponer / Leer CCD
+    Inst_Operativa --> Inst_Espera : Secuencia OK
+    
+    Inst_Espera --> Inst_Calibracion : Iniciar Flats/Darks
+    Inst_Calibracion --> Inst_Espera : Fin Calibración
+    Inst_Operativa --> Inst_Degradada : [Falla Obturador]
+    Inst_Degradada --> Inst_Espera : Reset Mecanismos
+    
+    Inst_Espera --> Inst_Mantenimiento : Carga Criogénica
+    Inst_Mantenimiento --> Inst_Espera : Fin Mantenimiento
+    
+    Inst_Espera --> Inst_Falla : [Pérdida de Vacío]
+    Inst_Operativa --> Inst_Falla : [Falla Electrónica]
+
+}
+
+OPERATIVO --> En_Reposo : Estacionar Sistemas & Apagar
+
+@endum
