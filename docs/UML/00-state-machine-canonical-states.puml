@@ -1,0 +1,42 @@
+@startuml "State_Machine_Canonical_States"
+
+' --- 1. DIAGRAMING ENGINE & GLOBAL FORMAT ---
+skinparam linetype splines
+skinparam nodesep 90
+skinparam ranksep 300
+skinparam dpi 300
+
+' --- 2. BOX ENLARGEMENT (SPACE FOR ARROWS) ---
+skinparam shadowing false
+skinparam wrapWidth 140
+skinparam maxMessageSize 180
+
+skinparam state {
+    BorderRadius 8
+    Padding 100
+    Margin 20
+}
+
+title State Machine Diagram: Site Canonical States
+
+state "Operational" as OPERATIONAL {
+    In_Preparation -right-> Standby : Calibration OK
+    Standby -right-> In_Observation : Start Science
+    In_Observation -left-> Standby : Pause Science
+    Standby -left-> In_Preparation : Reconfiguration Required
+    In_Preparation -down-> In_Maintenance : Conditioning Failure
+    Standby -down-> In_Maintenance : Technical Intervention
+    In_Maintenance -up-> Standby : Maintenance Complete
+    In_Observation -down-> In_Maintenance : System Fault /\nEmergency Stop
+}
+
+' Transiciones exteriores
+OPERATIONAL --> Safe_Mode : Safe_Alert\n[Weather / Seismic Alert]
+Safe_Mode --> Standby : Operational Parking\n[Safe Conditions]
+Safe_Mode --> In_Maintenance : Technical Verification[Safe Conditions]
+Idle --> Safe_Mode : Safe_Alert\n[Weather / Seismic Alert]
+Idle --> In_Preparation : Start Operations
+Safe_Mode -left-> Idle : Operational Shutdown\n[Safe Conditions]
+Standby -left-> Idle : Shutdown
+
+@enduml

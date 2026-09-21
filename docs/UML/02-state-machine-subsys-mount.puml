@@ -1,0 +1,27 @@
+@startuml "State_Machine_Mount"
+
+' --- 1. DIAGRAMING ENGINE & GLOBAL FORMAT ---
+skinparam linetype splines
+skinparam nodesep 90
+skinparam ranksep 300
+skinparam dpi 300
+
+' --- 2. BOX ENLARGEMENT (SPACE FOR ARROWS) ---
+skinparam shadowing false
+skinparam wrapWidth 140
+skinparam maxMessageSize 180
+
+skinparam state {
+    BorderRadius 8
+    Padding 100
+    Margin 20
+}
+
+title State Machine Diagram: MOUNT SUBSYSTEM
+
+
+
+
+
+
+@enduml
