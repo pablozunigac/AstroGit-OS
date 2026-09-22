@@ -3,7 +3,7 @@
     "defaultBranchRef": {
       "name": "main"
     },
-    "description": "AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.",
+    "description": "AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-gen astronomical observatories.",
     "forkCount": 0,
     "isPrivate": false,
     "name": "AstroGit-OS",
@@ -17,19 +17,10 @@
     {
       "name": "main",
       "commit": {
-        "sha": "1a4710cf60463cb38d4d4608e9a956362044bf54",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/1a4710cf60463cb38d4d4608e9a956362044bf54"
+        "sha": "ee36f0ac1a7ce13fb49f1f2e4a9dd6dec0c4f2b2",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/ee36f0ac1a7ce13fb49f1f2e4a9dd6dec0c4f2b2"
       },
-      "protected": false,
-      "protection": {
-        "enabled": false,
-        "required_status_checks": {
-          "enforcement_level": "off",
-          "contexts": [],
-          "checks": []
-        }
-      },
-      "protection_url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/branches/main/protection"
+      "protected": false
     }
   ],
   "labels": [
@@ -131,11 +122,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
+      "open_issues": 7,
       "closed_issues": 1,
       "state": "open",
       "created_at": "2026-09-10T06:25:34Z",
-      "updated_at": "2026-09-17T16:45:16Z",
+      "updated_at": "2026-09-18T17:56:44Z",
       "due_on": "2026-10-31T00:00:00Z",
       "closed_at": null
     },
@@ -255,20 +246,30 @@
     }
   ],
   "file_tree": [
-    ".github/scripts/astrogit_os_metadata.json",
+    ".github/scripts/export_repo_metadata.json",
     ".github/scripts/export_repo_metadata.sh",
-    ".github/workflows/test.yml",
+    ".github/workflows/update-repo-push.yml",
     ".gitignore",
     "LICENSE",
     "LICENSE-CC-BY-4.0",
+    "Makefile",
     "README.md",
+    "docs/ESO-astrogit-os-FULL.pdf",
     "docs/ESO-astrogit-os-LITE.pdf",
+    "docs/UML/00-state-machine-canonical-states.puml",
+    "docs/UML/01-state-machine-subsys-dome.puml",
+    "docs/UML/02-state-machine-subsys-mount.puml",
+    "docs/UML/03-state-machine-subsys-optics.puml",
+    "docs/UML/04-state-machine-subsys-instrumentation.puml",
+    "docs/UML/99-dummy.puml",
+    "docs/astrogit-os-asistente.pdf",
     "docs/astrogit-os-overview.pdf",
     "docs/diagrams/astrogit-os-diagram-1.png",
     "docs/diagrams/astrogit-os-diagram-2.png",
     "docs/diagrams/astrogit-os-diagram-3.png",
     "docs/diagrams/astrogit-os-diagram-4.png",
     "manifests/instrumentation.yaml",
+    "poc/TUI.py",
     "poc/poc001_sha256_generator.py",
     "poc/poc002_sha256_generator.py",
     "pyproject.toml",
@@ -281,61 +282,41 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
-    "1a4710c chore: update diagrams",
-    "a2d95d0 chore: update gitignore and purge temporary build artifacts",
-    "49de600 chore: update gitignore",
-    "4c30135 add: new repo metadata scripts",
-    "7bf559d edit: minor changes into public documentation",
-    "fff28af edit: new git workflows architecture",
-    "1991d3c edit: new git workflows architecture",
-    "fe22909 edit: new git workflows architecture",
-    "69a2514 Update README.md",
-    "358225d Add MIT License file",
-    "1acc62c Create LICENSE-CC-BY-4.0",
-    "a7b1db6 Rename LICENSE to LICENSE-MIT",
-    "8661541 add: MIT LICENSE",
-    "012f487 edit: minor changes in AstroGit-OS documentation",
-    "d9029db edit: minor changes in AstroGit-OS documentation",
-    "59dac6c fix: new repo source for diagrams",
-    "3ae3991 fix: new repo source for diagrams",
-    "d88123e fix: minor syntax changes",
-    "0c38113 style: resolve all ruff linter warnings",
-    "f7e4f9b chore: re-index codebase with clean git cache",
-    "01c5357 chore: all-new AstroGit-OS repo dependencies",
-    "a24a37d add: AstroGit-OS Python requirements setup",
-    "fec9563 add: milestones roadmap structure",
-    "ebec25f add: milestones roadmap structure",
-    "6f2f9b6 add: milestones roadmap structure",
-    "e3649d4 update: new sponsorship docs",
-    "c02497f update: new sponsorship docs",
-    "94fdcb8 update: uploading PDF AstroGit-OS ESO grant docs",
-    "1e08131 update: new README title",
-    "f04b708 update: new metrics in README",
-    "ac2b9ac update: new metrics in README",
-    "d495e0b delete: deleting from remote repo .gitignore dependencies",
-    "d5498ac update: new .gitignore repository dependencies",
-    "ff2a94a update: new README details & new overview (v0.2)",
-    "4b85ba9 update: new SHA-256 generators",
-    "7a123bc update: new .gitignore exclusions",
-    "6cb14d5 update: new architecture supporting Python coding",
-    "d3f43ed edit: minor README changes",
-    "26bc6ef refactor: new internal tree order",
-    "3306e7c update: new repo architecture & content",
-    "4f0a3a5 update: new repo architecture & content",
-    "d5df042 update: new repo architecture & content",
-    "9be8526 update: new repo architecture & content",
-    "6301945 update: new repo architecture & content",
-    "5e7245a update: new repo architecture & content",
-    "7ec4e5e update: new repo architecture & content",
-    "91e9956 update: new repo architecture & content",
-    "f490020 update: new repo architecture & content",
-    "669100d fix: README.md image",
-    "25adcf0 fix: minor corrections in README.md copy",
-    "d4ed5e6 add: new high-res images collection",
-    "0b442f3 fix: updating README footer",
-    "63a4dce add: all-new AstroGit-OS repository"
+    "ee36f0a feat: new .sh workflow for repo metada (JSON)"
   ],
   "issues": [
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "### Docs-as-Code Artifacts\n\n#### Work in Progress\n\n- [ ] AstroGit overview\n- [ ] AstroGit team workflows\n- [ ] Funds applications annexes: letters of intent, sponsorships, etc\n\n---\n\n#### Formats per Repo\n\n1- [pablozunigac.github.io](https://github.com/pablozunigac/pablozunigac.github.io): .md, .qmd.\n2- [AstroGit-OS](https://github.com/pablozunigac/AstroGit-OS): LaTeX, .md, .qmd.",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-18T17:56:43Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 13,
+      "state": "OPEN",
+      "title": "Docs-as-Code Integration for Current Documentation",
+      "updatedAt": "2026-09-18T17:56:44Z"
+    },
     {
       "assignees": [
         {
@@ -371,8 +352,8 @@
       },
       "number": 12,
       "state": "OPEN",
-      "title": "Next AstroGit Repo Tree",
-      "updatedAt": "2026-09-18T02:09:39Z"
+      "title": "Next AstroGit Repo Tree Update",
+      "updatedAt": "2026-09-18T17:59:01Z"
     },
     {
       "assignees": [
@@ -443,7 +424,7 @@
           "minimizedReason": "",
           "reactionGroups": [],
           "url": "https://github.com/pablozunigac/AstroGit-OS/issues/6#issuecomment-5718710341",
-          "viewerDidAuthor": true
+          "viewerDidAuthor": false
         }
       ],
       "createdAt": "2026-09-10T15:33:20Z",
@@ -637,7 +618,7 @@
           "minimizedReason": "",
           "reactionGroups": [],
           "url": "https://github.com/pablozunigac/AstroGit-OS/issues/1#issuecomment-5717106012",
-          "viewerDidAuthor": true
+          "viewerDidAuthor": false
         }
       ],
       "createdAt": "2026-09-10T05:07:26Z",
