@@ -1,0 +1,30 @@
+name: Update Repository Metadata
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  run-metadata-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Grant execution permissions to the script
+      run: chmod +x .github/scripts/export_repo_metadata.sh
+
+    - name: Execute metadata export script
+      run: .github/scripts/export_repo_metadata.sh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Commit and push generated changes
+      run: |
+        git config --local user.email "github-actions[bot]@://github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .
+        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update repository metadata [skip ci]" && git push)
