@@ -17,8 +17,8 @@
     {
       "name": "main",
       "commit": {
-        "sha": "ee36f0ac1a7ce13fb49f1f2e4a9dd6dec0c4f2b2",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/ee36f0ac1a7ce13fb49f1f2e4a9dd6dec0c4f2b2"
+        "sha": "741bb9a0e5f1623dce3b08dae2efa2140ec7ac65",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/741bb9a0e5f1623dce3b08dae2efa2140ec7ac65"
       },
       "protected": false
     }
@@ -122,11 +122,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
+      "open_issues": 8,
       "closed_issues": 1,
       "state": "open",
       "created_at": "2026-09-10T06:25:34Z",
-      "updated_at": "2026-09-18T17:56:44Z",
+      "updated_at": "2026-09-23T01:20:50Z",
       "due_on": "2026-10-31T00:00:00Z",
       "closed_at": null
     },
@@ -250,6 +250,7 @@
     ".github/scripts/export_repo_metadata.sh",
     ".github/workflows/update-repo-push.yml",
     ".gitignore",
+    "CHANGELOG.md",
     "LICENSE",
     "LICENSE-CC-BY-4.0",
     "Makefile",
@@ -261,9 +262,11 @@
     "docs/UML/02-state-machine-subsys-mount.puml",
     "docs/UML/03-state-machine-subsys-optics.puml",
     "docs/UML/04-state-machine-subsys-instrumentation.puml",
+    "docs/UML/99-dummy-2.puml",
     "docs/UML/99-dummy.puml",
     "docs/astrogit-os-asistente.pdf",
     "docs/astrogit-os-overview.pdf",
+    "docs/diagrams/00-state-machine-canonical-states.png",
     "docs/diagrams/astrogit-os-diagram-1.png",
     "docs/diagrams/astrogit-os-diagram-2.png",
     "docs/diagrams/astrogit-os-diagram-3.png",
@@ -282,9 +285,47 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
-    "ee36f0a feat: new .sh workflow for repo metada (JSON)"
+    "741bb9a add: new AstroGit-OS changelog file"
   ],
   "issues": [
+    {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjk0NDg2NTA=",
+          "login": "pablozunigac",
+          "name": "Pablo Zúñiga",
+          "databaseId": 9448650
+        }
+      ],
+      "body": "###\n\n**Nodes:** {SUMMIT, REGIONAL BASE, GLOBAL NODE, CLOUD}\n**Policy Concepts:** {Redundancy, Distribution, Resilience, Traceability}\n\n<img width=\"1077\" height=\"418\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/6425d37f-3043-40f0-a329-d3150442c295\" />\n\n---\n\n### SPANISH DEEP WHITEPAPER COPY\n\nORIGEN -> 2 GOBERNANZA INSTRUMENTAL MEDIANTE CÓDIGO\nSECCIÓN -> 2.4 Política de Operación Distribuida\n\nAstroGit-OS permite que la gobernanza del estado operacional continúe de forma local cuando la conectividad entre nodos se encuentra degradada o interrumpida. Las modificaciones realizadas durante una condición de desconexión permanecen asociadas al repositorio local y son posteriormente sometidas a sincronización, detección de divergencias y reconciliación una vez restablecida la conectividad.\nLa distribución no implica independencia semántica entre los nodos, sino capacidad de mantener representaciones locales del estado operacional y preservar la continuidad del historial de cambios bajo condiciones de conectividad intermitente.\n\n- **Redundancia**\nMúltiples réplicas sincronizables del estado operacional, preservando copias independientes del historial y reduciendo la dependencia de un único repositorio.\n- **Distribución**\nRepositorios/nodos desplegados en Cumbre, Base Regional, Nodo Internacional y Cloud, permitiendo mantener y sincronizar el estado operacional entre distintos dominios físicos.\n- **Resiliencia**\nCapacidad de continuar operando localmente ante la pérdida de conectividad o falla de un nodo, mediante sincronización posterior de la infraestructura distribuida.\n- **Trazabilidad**\nReconstrucción histórica de estado, configuración e intervenciones mediante el historial versionado de cambios para la evolución operacional de cada componente.",
+      "closedAt": null,
+      "comments": [],
+      "createdAt": "2026-09-23T01:14:38Z",
+      "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        },
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
+          "name": "architecture",
+          "description": "",
+          "color": "f33d1b"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "Milestone #1 — Read-only demonstrator against a representative operational subsystem",
+        "description": "### Project Status & Roadmap\n\n**Current Status:** Draft Development\n**Due Date:** Early Q4 2026\n\n---\n\n### Scope & Deliverables\n\n* **Declarative System & Domain Modeling**  \nFormalize the hierarchical digital representation for site entities states, encapsulating physical domains (Dome, Mount, Optics, Instrumentation), logical governance structures, and astronomical observation relationships. \n\n* **Canonical State Schema & Taxonomy**  \nDefine declarative schema specifications (YAML/JSON) and unique identifier (UID) standards for hardware components, operational variables, subsystems states, and Site compound macro-state (e.g., Operational Preparation, Standby, Observation, Maintenance, Safe State).\n\n* **Operational Baseline Ingestion**  \nEstablish the initial version-controlled operational baseline (To-Be) within local Git repositories, mapping initial hardware assets, parameters, and system boundaries.\n\n* **Non-Intrusive Telemetry Connectors**  \nDeploy passive, read-only connectors and state extraction agents to read live operational metadata from existing Telescope Control Systems (TCS) and control system layers without interfering with real-time execution.",
+        "dueOn": "2026-10-31T00:00:00Z"
+      },
+      "number": 14,
+      "state": "OPEN",
+      "title": "(add) Whitepaper: Nodes Architecture & Distributed Operation Policy",
+      "updatedAt": "2026-09-23T02:18:22Z"
+    },
     {
       "assignees": [
         {
@@ -314,8 +355,8 @@
       },
       "number": 13,
       "state": "OPEN",
-      "title": "Docs-as-Code Integration for Current Documentation",
-      "updatedAt": "2026-09-18T17:56:44Z"
+      "title": "(feat) Docs-as-Code Integration for Current Documentation",
+      "updatedAt": "2026-09-23T01:38:28Z"
     },
     {
       "assignees": [
@@ -396,8 +437,8 @@
       },
       "number": 11,
       "state": "OPEN",
-      "title": "AstroGit-OS needs a Git DAG for observational Git commands",
-      "updatedAt": "2026-09-17T19:36:34Z"
+      "title": "(add) AstroGit-OS needs a Git DAG for observational Git commands",
+      "updatedAt": "2026-09-23T01:40:38Z"
     },
     {
       "assignees": [
@@ -425,10 +466,31 @@
           "reactionGroups": [],
           "url": "https://github.com/pablozunigac/AstroGit-OS/issues/6#issuecomment-5718710341",
           "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOUUVgcM8AAAABWPqK2w",
+          "author": {
+            "login": "pablozunigac"
+          },
+          "authorAssociation": "OWNER",
+          "body": "## AstroGit Resolution Modeling\n\n<img width=\"3840\" height=\"2740\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/be4ddeca-ba45-41f2-9aff-b3453bebbafa\" />\n\n### AstroGit-OS Entities\n- **Site Subsystems:** {Dome, Mount, Optics, Instrumentation}\n- **Components**\n   - Dome: {dome_comp1, dome_comp2,...}\n   - Mount: {mount_comp1, mount_comp2,...} \n   - Optics: {optics_comp1, optics_comp2,...}\n   - Instrumentation: {optics_comp1, optics_comp2,...}\n- **Variables**\n   - dome_comp1: {var100, var101,...}\n   - dome_comp2: {var200, var201,...}\n   - dome_comp...\n   - mount_comp1: {var300, var301,...}\n   - mount_comp2: {var400, var401,...}\n   - mount_comp...\n   - optics_comp1: {var500, var501,...}\n   - etc\n\n---\n\n<img width=\"7524\" height=\"4056\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/4a627ec4-9db0-4af1-9b84-dd70b16c3585\" />\n\n### AstroGit-OS UML State Machine Diagrams\n\n- **Site Canonical States:** {In_Preparation, Ready, In_Observation, Idle, In_Maintenance, Safe_Mode}\n- **Subsystems States:**: WIP\n",
+          "createdAt": "2026-09-23T02:14:44Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/pablozunigac/AstroGit-OS/issues/6#issuecomment-5787781851",
+          "viewerDidAuthor": false
         }
       ],
       "createdAt": "2026-09-10T15:33:20Z",
       "labels": [
+        {
+          "id": "LA_kwDOUUVgcM8AAAAC0temfQ",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        },
         {
           "id": "LA_kwDOUUVgcM8AAAAC0ufrYA",
           "name": "architecture",
@@ -445,7 +507,7 @@
       "number": 6,
       "state": "OPEN",
       "title": "Site Resolution Modeling & Relations between Its Componente",
-      "updatedAt": "2026-09-17T17:39:17Z"
+      "updatedAt": "2026-09-23T02:14:44Z"
     },
     {
       "assignees": [
@@ -564,9 +626,25 @@
           "databaseId": 9448650
         }
       ],
-      "body": "1- Canonical Operational States\n2- Subsystems Operational States\n3- Operational States Compound",
+      "body": "## AstroGit-OS UML State Machine Diagrams\n\n- [x] Canonical Operational States\n- [ ] Subsystems Operational States\n- [ ] Operational States Compound",
       "closedAt": null,
-      "comments": [],
+      "comments": [
+        {
+          "id": "IC_kwDOUUVgcM8AAAABWPTg4g",
+          "author": {
+            "login": "pablozunigac"
+          },
+          "authorAssociation": "OWNER",
+          "body": "Canonical State Machine is finished.\n\n<img width=\"7524\" height=\"4056\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/827487f4-cc45-462d-bdf3-c2eb666d6ec1\" />",
+          "createdAt": "2026-09-23T01:31:03Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/pablozunigac/AstroGit-OS/issues/2#issuecomment-5787410658",
+          "viewerDidAuthor": false
+        }
+      ],
       "createdAt": "2026-09-10T05:13:58Z",
       "labels": [
         {
@@ -590,8 +668,8 @@
       },
       "number": 2,
       "state": "OPEN",
-      "title": "UML State Machine Diagram Modeling",
-      "updatedAt": "2026-09-17T00:16:29Z"
+      "title": "(add) UML State Machine Diagram Modeling",
+      "updatedAt": "2026-09-23T01:38:41Z"
     },
     {
       "assignees": [
