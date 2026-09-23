@@ -2,8 +2,8 @@
 
 ' --- ENGINE SETUP & FORMATING ---
 skinparam linetype splines
-skinparam nodesep 80
-skinparam ranksep 80
+skinparam nodesep 120
+skinparam ranksep 120
 skinparam dpi 300
 skinparam shadowing true
 
@@ -13,7 +13,7 @@ skinparam state {
     Margin 10
 }
 
-title AstroGit-OS Site State Machine
+title Máquina de Estados Canónicos: AstroGit-OS Site Master
 
 ' --- GLOBAL CONTAINER ---
 state "Active" as SYSTEM_ACTIVE {
@@ -22,18 +22,18 @@ state "Active" as SYSTEM_ACTIVE {
     ' --- SUBESTADO COMPUESTO OPERACIONAL ---
     state "Operational" as OPERATIONAL {
         state In_Preparation
-        state Ready
+        state Standby
         state In_Observation
         
-        In_Preparation -right-> Ready : Configuration
-        Ready -left-> In_Preparation : Reconfigure
-        Ready -right-> In_Observation : Start_Science
-        In_Observation -left-> Ready : Pause_Science
+        In_Preparation -right-> Standby : Configuration
+        Standby -right-> In_Observation : Start_Science
+        In_Observation -left-> Standby : Pause_Science
+        Standby -left-> In_Preparation : Reconfigure
     }
     
     ' --- INTERNAL TRANSITIONS ---
-    IDLE -down-> In_Preparation : Startup
-    Ready -up-> IDLE : Park
+    IDLE -down-> In_Preparation : Starup
+    Standby -up-> IDLE : Park
 }
 
 ' --- SERVICE & MAINTENANCE STATES ---
@@ -41,15 +41,16 @@ state Safe_Mode
 state In_Maintenance
 
 ' --- EXTREME EXTERNAL EVENTS ---
-SYSTEM_ACTIVE -up-> Safe_Mode : extreme_external_event
+SYSTEM_ACTIVE --> Safe_Mode : extreme_external_event
 
 ' --- SAFE_MODE RECOVERY ---
 Safe_Mode --> In_Maintenance : Manual_Verification
+Safe_Mode --> In_Preparation : Safety OK
 Safe_Mode --> IDLE : Reset
 
 ' --- FROM/TO: MAINTENANCE ---
-OPERATIONAL --> In_Maintenance : System_Failure
-In_Preparation --> In_Maintenance : Conditioning_Fault
-In_Maintenance --> IDLE : Maintenance_Complete
+OPERATIONAL --> In_Maintenance : System_Fault
+In_Preparation --> In_Maintenance : Conditioning_Failure
+In_Maintenance --> Standby : Maintenance_Complete
 
 @enduml
