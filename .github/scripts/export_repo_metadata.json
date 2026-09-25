@@ -17,8 +17,8 @@
     {
       "name": "main",
       "commit": {
-        "sha": "741bb9a0e5f1623dce3b08dae2efa2140ec7ac65",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/741bb9a0e5f1623dce3b08dae2efa2140ec7ac65"
+        "sha": "964a29f4e494692a0fa6609e73c6da02b5805f7c",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/964a29f4e494692a0fa6609e73c6da02b5805f7c"
       },
       "protected": false
     }
@@ -262,8 +262,8 @@
     "docs/UML/02-state-machine-subsys-mount.puml",
     "docs/UML/03-state-machine-subsys-optics.puml",
     "docs/UML/04-state-machine-subsys-instrumentation.puml",
+    "docs/UML/99-dummy-1.puml",
     "docs/UML/99-dummy-2.puml",
-    "docs/UML/99-dummy.puml",
     "docs/astrogit-os-asistente.pdf",
     "docs/astrogit-os-overview.pdf",
     "docs/diagrams/00-state-machine-canonical-states.png",
@@ -285,7 +285,7 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
-    "741bb9a add: new AstroGit-OS changelog file"
+    "964a29f update: new UML state machien diagrams"
   ],
   "issues": [
     {
