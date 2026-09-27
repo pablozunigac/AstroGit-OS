@@ -17,8 +17,8 @@
     {
       "name": "main",
       "commit": {
-        "sha": "61a516702aa871e2d6272e486fc5b6f8b07ba2d5",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/61a516702aa871e2d6272e486fc5b6f8b07ba2d5"
+        "sha": "70e0165de31592025216ffe877c8c903ff749ea8",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/70e0165de31592025216ffe877c8c903ff749ea8"
       },
       "protected": false
     }
@@ -286,7 +286,7 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
-    "61a5167 update: massive PDF files edit"
+    "70e0165 update: massive PDF files edit"
   ],
   "issues": [
     {
