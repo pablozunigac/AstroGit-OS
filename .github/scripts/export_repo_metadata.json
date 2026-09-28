@@ -17,8 +17,8 @@
     {
       "name": "main",
       "commit": {
-        "sha": "c22e9a1549c84161f5bfeee8d985de8fb7f2d040",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/c22e9a1549c84161f5bfeee8d985de8fb7f2d040"
+        "sha": "30113fef2655310aad2d8f209b92caf631d37d5a",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/30113fef2655310aad2d8f209b92caf631d37d5a"
       },
       "protected": false
     }
@@ -256,7 +256,6 @@
     "LICENSE-CC-BY-4.0",
     "Makefile",
     "README.md",
-    "docs/ESO-astrogit-os-FULL.pdf",
     "docs/ESO-astrogit-os-LITE.pdf",
     "docs/UML/00-state-machine-canonical-states.puml",
     "docs/UML/01-state-machine-subsys-dome.puml",
@@ -272,6 +271,7 @@
     "docs/diagrams/astrogit-os-diagram-2.png",
     "docs/diagrams/astrogit-os-diagram-3.png",
     "docs/diagrams/astrogit-os-diagram-4.png",
+    "docs/diagrams/tui.png",
     "manifests/instrumentation.yaml",
     "poc/TUI.py",
     "poc/poc001_sha256_generator.py",
@@ -286,7 +286,7 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
-    "c22e9a1 edit: minor editorial changes"
+    "30113fe update: new README"
   ],
   "issues": [
     {
