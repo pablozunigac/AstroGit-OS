@@ -12,25 +12,19 @@
 
 **AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.** Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
 
-![AstroGit-OS](docs/diagrams/astrogit-os-diagram-3.png)
-
 ---
 
-### The Value of Operational Certainty in Astronomy
+### Frontier Environment Governance
 
-Through an operational state reconciliation architecture, AstroGit-OS:
-* **Governs Infrastructure Evolution**  
-Tracks state changes across instrumentation subsystems.
-* **Detects Configuration Drift**  
-Identifies deviations between observed state (*As-Is*) and desired configuration (*To-Be*).
-* **Establishes Traceability**  
-Links observation blocks to versioned operational states via passive telemetry and non-intrusive extraction agents.
+Complex physical infrastructure —from ground-based astronomical observatories to orbital payloads and autonomous industrial facilities— operates under extreme conditions where thermal, mechanical, and structural variations directly impact operational integrity. Historically, hardware states have been fragmented across legacy control loops, localized databases, and manual logs, creating blind spots in drift detection, root-cause diagnostics, and states reproducibility.
 
 ---
 
 ### Scope and Boundaries of AstroGit-OS
 
 AstroGit-OS does not capture, store, process, simulate, or transmit astronomical data, nor does it operate telescopes in real time. Its function is to govern a versioned, asynchronous digital representation of the operational state of telescopes and other scientific infrastructure, decoupling scientific activities from engineering operations. AstroGit-OS records, stores, and audits the evolution of infrastructure configuration through Git as a version-controlled governance mechanism, keeping the declarative representation of operational state separate from its physical implementation across the instrumentation.
+
+![AstroGit-OS](docs/diagrams/astrogit-os-diagram-3.png)
 
 ---
 
@@ -39,12 +33,37 @@ AstroGit-OS does not capture, store, process, simulate, or transmit astronomical
 * **Scientific Lineage Without Massive Data**  
 Associates each astronomical observation block with a SHA-256 identifier of the hardware operational state, enabling verifiable scientific traceability without burdening the repository with massive datasets.
 
-
 * **Distributed Operational Resilience**  
 Supports operational continuity and the recovery of versioned configurations at remote high-altitude observatories through decentralized and synchronized Git topologies.
 
 * **Non-Intrusive Declarative Governance**  
 Translates infrastructure maintenance into an auditable workflow through Pull Requests and human approval, operating strictly asynchronously without interfering with real-time telescope operations.
+
+---
+
+### Operational Value in Scientific Infrastructure
+
+Through an operational state reconciliation architecture, AstroGit-OS governs the evolution of infrastructure and instrumentation, detects deviations between observed state and desired configuration, and establishes a verifiable link between observation blocks and the versioned operational state through passive telemetry and non-intrusive state extraction agents. In doing so, it aims to reduce operational uncertainty, minimize downtime, and facilitate the reproduction of technical conditions underlying the scientific use of astronomical instrumentation.
+
+* **Operational Uptime Optimization**  
+Minimizes unplanned downtime through early detection of drift between the infrastructure's desired state (To-Be) and its actual telemetry (As-Is).
+* **Technical Reproducibility Assurance**  
+Facilitates the exact reconstruction of the optomechanical environment by immutably binding each observation block to a SHA-256 cryptographic digest of its operational state.
+* **Standardization of Engineering Interventions**  
+Streamlines the creation, execution, and verification of engineering procedures by routing hardware modifications through declarative GitOps workflows and peer review.
+* **Immutable Forensic Traceability**  
+Delivers a continuous, unalterable history of the instrumentation lifecycle via append-only logs, simplifying technical audits and root-cause failure diagnostics.
+
+---
+
+### Declarative Schemas and State Serialization
+
+AstroGit-OS adopts a dual-format strategy for operational state representation to ensure system interoperability, high-throughput machine consumption, and seamless human governance. This architecture separates the human-defined infrastructure specification from the automated collection of live state metadata.
+
+* **Desired State (To-Be) via YAML**  
+Represents the canonical baseline specifications and composite subsystem configurations. Defined, reviewed, and approved by engineering teams via GitOps workflows, YAML provides optimal human readability, inline documentation, and native compatibility with code review tooling (git diff and Pull Requests).
+* **Observed State (As-Is) via JSON**  
+Captures the live operational state vector extracted directly from infrastructure telemetry. Generated automatically by non-intrusive extraction agents, JSON offers a lightweight, low-overhead format optimized for high-speed machine parsing, API consumption, and automated drift reconciliation.
 
 ---
 
@@ -99,6 +118,14 @@ subsystems:
 lineage:
   state_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 ```
+
+---
+
+### TUI Console and Operational State Management
+
+AstroGit-OS integrates an interactive TUI —compatible with Git commands and standard command-line utilities— for querying, monitoring, and auditing astronomical infrastructure, combining the precision of its declarative model with command-line agility. From this interface, operators manage the operational state and drift between the baseline configuration recorded in Git (To-Be) and the physical equipment’s actual state (As-Is), streamlining audits, maintenance routines, and state reconciliation across the Summit, Base operations, and Cloud.
+
+![AstroGit-OS](docs/diagrams/tui.png)
 
 ---
 
