@@ -1,5 +1,9 @@
 ## AstroGit-OS: Declarative Architecture and Operational Lineage for Astronomical Instrumentation via GitOps
 
+### Overview
+
+**AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.** Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
+
 | Metric | Value |
 | :--- | :--- |
 | **Author** | [**Pablo Zúñiga**](https://pablozunigac.github.io) |
@@ -7,12 +11,6 @@
 | **Next Milestone** | [**Milestone 1**](https://github.com/pablozunigac/AstroGit-OS/milestone/1): Read-only demonstrator against a representative operational subsystem |
 | **Stable Release Date** | Early Q4 2026 |
 | **License** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en) (Architecture & Specs) / [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
-
----
-
-### Overview
-
-**AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.** Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
 
 ---
 
