@@ -10,17 +10,19 @@
 
 ---
 
+### Overview
+
 **AstroGit-OS is a reference declarative architecture for the configuration, maintenance, and operational lineage of optomechanical instrumentation in next-generation astronomical observatories.** Applying GitOps and Infrastructure-as-Code principles, AstroGit-OS dispenses with massive astronomical data and focuses exclusively on the operational metadata required to govern scientific infrastructure.
 
 ---
 
-### Frontier Environment Governance
+### Frontier Environments Governance
 
 Complex physical infrastructure —from ground-based astronomical observatories to orbital payloads and autonomous industrial facilities— operates under extreme conditions where thermal, mechanical, and structural variations directly impact operational integrity. Historically, hardware states have been fragmented across legacy control loops, localized databases, and manual logs, creating blind spots in drift detection, root-cause diagnostics, and states reproducibility.
 
 ---
 
-### Scope and Boundaries of AstroGit-OS
+### Scope & Boundaries of AstroGit-OS
 
 AstroGit-OS does not capture, store, process, simulate, or transmit astronomical data, nor does it operate telescopes in real time. Its function is to govern a versioned, asynchronous digital representation of the operational state of telescopes and other scientific infrastructure, decoupling scientific activities from engineering operations. AstroGit-OS records, stores, and audits the evolution of infrastructure configuration through Git as a version-controlled governance mechanism, keeping the declarative representation of operational state separate from its physical implementation across the instrumentation.
 
