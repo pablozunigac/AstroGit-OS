@@ -58,7 +58,7 @@ Delivers a continuous, unalterable history of the instrumentation lifecycle via 
 
 ---
 
-### Declarative Schemas and State Serialization
+### Declarative Schemas & State Serialization
 
 AstroGit-OS adopts a dual-format strategy for operational state representation to ensure system interoperability, high-throughput machine consumption, and seamless human governance. This architecture separates the human-defined infrastructure specification from the automated collection of live state metadata.
 
@@ -123,7 +123,7 @@ lineage:
 
 ---
 
-### TUI Console and Operational State Management
+### TUI Console & Operational State Management
 
 AstroGit-OS integrates an interactive TUI —compatible with Git commands and standard command-line utilities— for querying, monitoring, and auditing astronomical infrastructure, combining the precision of its declarative model with command-line agility. From this interface, operators manage the operational state and drift between the baseline configuration recorded in Git (To-Be) and the physical equipment’s actual state (As-Is), streamlining audits, maintenance routines, and state reconciliation across the Summit, Base operations, and Cloud.
 
