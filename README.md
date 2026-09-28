@@ -4,7 +4,7 @@
 | :--- | :--- |
 | **Author** | [**Pablo Zúñiga**](https://pablozunigac.github.io) |
 | **Development Progress** | [**AstroGit-OS Roadmap**](https://github.com/users/pablozunigac/projects/2/views/1) |
-| **Next Milestone** | [**Milestone 1**](https://github.com/pablozunigac/AstroGit-OS/milestone/1): Read-only demonstrator against a representative operational |
+| **Next Milestone** | [**Milestone 1**](https://github.com/pablozunigac/AstroGit-OS/milestone/1): Read-only demonstrator against a representative operational subsystem |
 | **Stable Release Date** | Early Q4 2026 |
 | **License** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/deed.en) (Architecture & Specs) / [**MIT**](https://tlo.mit.edu/understand-ip/exploring-mit-open-source-license-comprehensive-guide) (Code) |
 
