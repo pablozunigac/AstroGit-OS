@@ -17,8 +17,8 @@
     {
       "name": "main",
       "commit": {
-        "sha": "1663cc160d6f40e875fd1ffe01dc14d09a557cb1",
-        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/1663cc160d6f40e875fd1ffe01dc14d09a557cb1"
+        "sha": "ade0c534bf8c58da213480267335fc2bc99c4413",
+        "url": "https://api.github.com/repos/pablozunigac/AstroGit-OS/commits/ade0c534bf8c58da213480267335fc2bc99c4413"
       },
       "protected": false
     }
@@ -286,7 +286,7 @@
     "tests/test_smoke.py"
   ],
   "recent_commits": [
-    "1663cc1 update: new README"
+    "ade0c53 update: new README"
   ],
   "issues": [
     {
