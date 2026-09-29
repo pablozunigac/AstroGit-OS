@@ -1,0 +1,33 @@
+### 📄 Draft Support Letter Template (For your convenience)
+
+> **Tip:** You can copy the raw Markdown snippet below, or view/fork it directly if preferred.
+
+***
+
+```text
+Antofagasta, September 20, 2026
+
+To the Members of the
+Comité Mixto ESO / Gobierno de Chile
+Convocatoria a Fondos Regionales 2026
+Santiago, Chile
+
+SUBJECT: LETTER OF TECHNICAL SUPPORT AND INSTITUTIONAL INTEREST
+• Project: AstroGit-OS (Antofagasta Region, Chile)
+• Project Lead: Pablo Zúñiga
+
+To Whom It May Concern,
+
+I am writing to express my technical support for the AstroGit-OS initiative, led by Pablo Zúñiga, in its application for the 2026 ESO-Government of Chile regional funds.
+
+As astronomical infrastructures scale in complexity, managing infrastructure drift and ensuring environmental reproducibility remain critical bottlenecks. AstroGit-OS presents a compelling architectural approach by adapting proven GitOps and declarative configuration methodologies to optomechanical systems. By decoupling operational metadata from high-throughput scientific data streams, the framework introduces a scalable, non-intrusive paradigm for state governance and forensic traceability in frontiers observatories.
+
+I find the technical foundation of AstroGit-OS to be sound and highly relevant to the operational resilience of next-generation scientific megainfrastructures. I fully endorse this project for development and hardware-in-the-loop validation under the ESO-Chile funding framework.
+
+Sincerely,
+
+Arfon Smith
+Senior Fellow, Schmidt Sciences
+```
+
+***

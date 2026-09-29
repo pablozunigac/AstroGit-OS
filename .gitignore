@@ -8,6 +8,7 @@
 .Spotlight-V100
 .Trashes
 .fseventsd
+*.docx
 *.pages
 *.key
 *.keynote
@@ -79,14 +80,15 @@ __pycache__/
 # ==========================================
 docs/annexes
 docs/ESO-docs
-docs/sponsorship
+# docs/sponsorship
+docs/sponsorship/letters
 
 # ==========================================
 # Files
 # ==========================================
 docs/astrogit-os-whitepaper.pdf
-# docs/ESO-astrogit-os-LITE.pdf
-# docs/ESO-astrogit-os-FULL.pdf
+docs/ESO-astrogit-os-LITE.pdf
+docs/ESO-astrogit-os-FULL.pdf
 # docs/ESO-astrogit-os-asistente.pdf
 
 
