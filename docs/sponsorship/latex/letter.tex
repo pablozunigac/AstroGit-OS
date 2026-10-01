@@ -1,0 +1,116 @@
+\documentclass[letterpaper,11pt]{article}
+
+% --- PAQUETES BÁSICOS Y CONFIGURACIÓN REGIONAL ---
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2.5cm,top=17mm,bottom=1.4cm,headheight=12pt]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+% --- COLORES CORPORATIVOS ---
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{1A1D20}  
+\definecolor{secondary}{HTML}{47607b}
+\definecolor{divider}{HTML}{D0D5DD}
+\definecolor{accent}{HTML}{005A9C}
+
+% --- ENCABEZADOS Y PIES DE PÁGINA ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{ \color {divider} \hrule width \headwidth height \headrulewidth}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\footrule}{ \color {divider} \hrule width \headwidth height \headrulewidth}
+
+% --- CABECERA ---
+\fancyhead[R]{%
+    \raisebox{4mm}{% Valores positivos suben el texto, negativos lo bajan
+    \parbox{\linewidth}{\raggedleft
+    \fontsize{9pt}{18pt} \selectfont \bfseries \color {secondary} %
+    CENTRO DE INVESTIGACIÓN, TECNOLOGÍA, EDUCACIÓN Y VINCULACIÓN ASTRONÓMICA (CITEVA)\\%
+    \fontsize{9pt}{12pt} \selectfont \mdseries \color {secondary} %
+    Universidad de Antofagasta --- Antofagasta, Chile
+    }%
+    }% 
+}
+
+% Pie de página
+\fancyfoot[C]{%
+    \raisebox{0mm}{%
+    \fontsize{8pt}{0pt} \selectfont \color {secondary}%
+    eduardo.unda@uantof.cl \ \textperiodcentered\ %
+    +56 552 637 599 \ \textperiodcentered\ %
+    astro.uantof.cl
+    }%
+}
+
+% --- ELEMENTOS GRÁFICOS Y VÍNCULOS ---
+\usepackage[colorlinks=true,linkcolor=accent,citecolor=accent,urlcolor=accent]{hyperref}
+
+% --- INICIO DEL DOCUMENTO ---
+\begin{document}
+
+\begin{flushright}
+    \noindent{\raggedleft\small\color{primary} %
+    \smash{\raisebox{-3mm}{Antofagasta, 21 de septiembre de 2026}}\par} %
+\end{flushright}
+
+\vspace{0.3cm}
+
+\begin{raggedright}
+    \small
+    \textbf{\color{primary} Señores} \\
+    \textbf{\color{primary} Comité Mixto ESO / Gobierno de Chile} \\
+    Convocatoria a Fondos Regionales 2026 \\
+    Presente \\
+\end{raggedright}
+
+\vspace{1cm}
+
+\begin{center}
+    \color{primary} \bfseries \fontsize {12pt} {0pt} \selectfont
+    CARTA DE PATROCINIO Y APOYO INSTITUCIONAL
+\end{center}
+
+\vspace{0.5cm}
+
+    \color{primary} \small
+    \textbf{Proyecto:} AstroGit-OS \\
+    \textbf{Director del Proyecto:} Pablo Zúñiga \\
+    \textbf{Alcance Territorial:} Región de Antofagasta \vspace{0.3cm}
+
+Estimados Miembros del Comité Mixto: \vspace{0.3cm}
+
+Por medio de la presente, manifiesto el interés y patrocinio institucional del \textbf{Centro de Investigación, Tecnología, Educación y Vinculación Astronómica (CITEVA)} de la Universidad de Antofagasta al proyecto \textbf{AstroGit-OS: Arquitectura Declarativa y Linaje Operacional para Instrumentación Astronómica mediante GitOps}, liderado por el ingeniero Pablo Zúñiga, en el marco de la Convocatoria 2026 de los Fondos Regionales del Comité Mixto ESO--Gobierno de Chile. Nuestra evaluación de la propuesta destaca su elevado valor científico, institucional y territorial para la Región de Antofagasta, destacando:
+
+\vspace{-2mm}
+\begin{itemize}
+    \item \textbf{Alineación estratégica en astroinformática de frontera} \\
+    AstroGit-OS aborda un desafío crítico en mega-infraestructuras astronómicas: garantizar la trazabilidad, certidumbre y reproducibilidad operacional sin intervenir redes de control ni flujos de datos masivos, posicionando a la región como un polo de innovación en \textit{software} de vanguardia.    
+    \item \textbf{Formación de capital humano avanzado y sinergia académica} \\
+    CITEVA valora la incorporación de talento local mediante la vacante de Asistente de Desarrollo en Astrofísica. Su articulación con programas de pre y posgrado universitario permitirá transferir estándares de ingeniería industrial y consolidar capacidades técnicas permanentes en la región.    
+    \item \textbf{Conocimiento abierto, transferencia tecnológica y proyección regional} \\El compromiso \textit{Open-Source} (licencias MIT y CC BY 4.0) y la realización de talleres técnicos en CITEVA fortalecen el ecosistema académico local, proyectando además la transferencia de esta arquitectura declarativa hacia la gestión de infraestructura en la gran minería regional.
+\end{itemize}
+
+Con base en estas fortalezas, CITEVA promoverá la difusión académica, la vinculación estudiantil y la coordinación técnica necesarias para el éxito del proyecto en la región. Consideramos que AstroGit-OS constituye un modelo ejemplar de desarrollo tecnológico regional con proyección científica e industrial, por lo que respaldamos su actual postulación a los Fondos Regionales ESO–Gobierno de Chile 2026.
+
+\vspace{0.6cm}
+
+Atentamente,
+
+\vspace{1.5cm}
+\begin{center}
+    \begin {minipage} {.8\textwidth}
+        \centering \color{primary} \textbf {Dr. Eduardo Unda-Sanzana}\\
+        Director\\
+        Centro de Investigación, Tecnología, Educación y Vinculación Astronómica (CITEVA)\\
+        Universidad de Antofagasta\\
+    \end{minipage}
+\end{center}
+
+\end{document}
