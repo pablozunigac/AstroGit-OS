@@ -8,4 +8,4 @@
 
 ## [0.1] — 2026-08-27
 
-- Initial project version.
+- Initial project version
